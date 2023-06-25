@@ -162,8 +162,8 @@
   }
 
   div.zoomed { 
-    zoom: 0.9; 
-    -moz-transform: scale(0.9); 
+    zoom: 0.85; 
+    -moz-transform: scale(0.85); 
     -moz-transform-origin: 0 0;
 } 
 
