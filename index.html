@@ -118,12 +118,12 @@
                 <!-- <h6>Paper</h6> -->
                 </a>
             </div>
-            <li>
+            <div>
                 <a href="https://youtu.be/xCXx09gfhx4">
                 <image src="img/youtube_icon.png" height="45px">
                 <h4><strong>Video</strong></h4>
                 </a>
-            </li>
+            </div>
             <div class="col-md-2 text-center">
                 <a href="https://github.com/google-research/google-research/tree/master/knowno">
                 <image src="img/github.png" height="45px">
@@ -191,7 +191,15 @@
                     <image src="img/mcqa-cp.png" width="100%">
                 </p>
                 KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to <strong>task completion guarantee</strong>. As CP provides small prediction sets, the human help is minimal. These two properties achieve the goal of calibrated confidence and minimal help.
-                <br><br>
+                <br>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <video id="v0" width="60%" preload="metadata" playsinline muted loop autoplay>
+                            <source src="videos/knowno-cp-handbrake.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <br>
                 <p style="text-align:center;">
                     <image src="img/multistep-bimanual.png" width="100%">
                 </p>
