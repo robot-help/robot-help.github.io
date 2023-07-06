@@ -6,12 +6,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G672FKQW8R"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXEE17ZF5T"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-G672FKQW8R');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QXEE17ZF5T');
     </script>
 
     <title>Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners</title>
@@ -112,7 +112,7 @@
 
         <div class="row justify-content-md-center">
             <div class="col-md-2 text-center">
-                <a href="https://arxiv.org/abs/?">
+                <a href="https://arxiv.org/abs/2307.01928">
                 <image src="img/paper_small.png" height="45px">
                 <h4><strong>Paper</strong></h4>
                 <!-- <h6>Paper</h6> -->
@@ -150,7 +150,7 @@
         <div class="row mt-4">
             <div class="col-md-12 text-center">
                 <video id="v0" width="80%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/webpage-front-large.mp4" type="video/mp4">
+                    <source src="videos/knowno-microwave-score-handbrake.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
@@ -187,24 +187,25 @@
                 </h3>
                 <p class="text-justify">
                     KnowNo builds upon <a href="https://en.wikipedia.org/wiki/Conformal_prediction">conformal prediction</a> (CP) to formally quantify the LLM uncertainty and achieve uncertainty alignment. KnowNo first constructs a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, KnowNo prompts LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. KnowNo obtains the likelihood of the LLM predicting the five choices: A, B, C, D, E. Then calibration is done using the likelihood of the true options of the calibration data, and the result is a likelihood threshold. At test time given a new scenario, the prediction set includes options with likelihood above the threshold. CP provides statistical guarantee that the true option is included in the prediction set with probability of a user-specified level. In addition, CP affords the benefit of producing smallest average prediction set size with theoretical guarantees.
-                <p style="text-align:center;">
+                <br><p style="text-align:center;">
                     <image src="img/mcqa-cp.png" width="100%">
-                </p>
+                </p><br>
                 KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to <strong>task completion guarantee</strong>. As CP provides small prediction sets, the human help is minimal. These two properties achieve the goal of calibrated confidence and minimal help.
                 <br>
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
-                        <video id="v0" width="80%" preload="metadata" playsinline muted loop autoplay>
+                        <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
                             <source src="videos/knowno-cp-handbrake.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
-
+                <br>
                 KnowNo can also be applied in <strong>multi-step</strong> planning settings (with possibly multiple acceptable options per step) with novel extensions of CP derived in our work. KnowNo provides statistical guarantees on episode-level task completion and minimizes human intervention on both sequence and step levels.
-                <!-- <br> -->
+                <br>
                 <p style="text-align:center;">
                     <image src="img/multistep-bimanual.png" width="100%">
                 </p>
+                <br><br>
             </div>
         </div>
 
@@ -518,13 +519,13 @@
                 <h3>
                     Citation 
                 </h3>
-                <!-- <a href="https://arxiv.org/abs/?">[arxiv version]</a> -->
+                <a href="https://arxiv.org/abs/2307.01928">[arxiv version]</a>
                 <div class="form-group col-md-12">
                     <textarea id="bibtex" class="form-control" rows="8" readonly>
 @inproceedings{knowno2023,
     title={Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners},
     author={Ren, Allen Z. and Dixit, Anushri and Bodrova, Alexandra and Singh, Sumeet and Tu, Stephen and Brown, Noah and Xu, Peng and Takayama, Leila and Xia, Fei and Varley, Jake and Xu, Zhenjia and Sadigh, Dorsa and Zeng, Andy and Majumdar, Anirudha},
-    booktitle={arXiv preprint arXiv:?},
+    booktitle={arXiv preprint arXiv:2307.01928},
     year={2023}
 }</textarea>
                 </div>
