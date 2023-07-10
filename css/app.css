@@ -175,6 +175,10 @@
     -moz-transform-origin: 0 0;
 } 
 
+.twitter-timeline {
+  width: 60vw !important;
+}
+
 pre.codegen {
   height: 100px;
   overflow-y: scroll;
